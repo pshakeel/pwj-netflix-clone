@@ -1,0 +1,5 @@
+git clone https://github.com/RAHAMSHAIK007/netflix-clone.git
+mv netflix-clone/* .
+
+docker build -t netflix:v1 .
+docker run -itd --name cont1 -p 80:80 netflix:v1
